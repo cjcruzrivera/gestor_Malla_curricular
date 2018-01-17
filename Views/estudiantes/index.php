@@ -14,7 +14,7 @@
                         <th>Nombre</th>
                         <th>Edad</th>
                         <th>Promedio</th>
-                        <th>Sección</th>
+                        <th>Programa</th>
                         <th></th>
                     </tr>
                 </thead>
@@ -27,7 +27,7 @@
                             <td><a href="<?php echo URL; ?>/estudiantes/ver/<?php echo $row['id']; ?>"><?php echo $row['nombre']; ?></a></td>
                             <td><?php echo $row['edad']; ?></td>
                             <td><?php echo $row['promedio']; ?></td>
-                            <td><?php echo $row['nombre_seccion']; ?></td>
+                            <td><?php echo $row['nombre_programa']; ?></td>
                             <td><a class = "btn btn-warning" href="<?php echo URL; ?>estudiantes/editar/<?php echo $row['id']; ?>"><span class = "glyphicon glyphicon-edit"></span></a>
                             <a class = "btn btn-danger" href="<?php echo URL; ?>estudiantes/eliminar/<?php echo $row['id']; ?>"><span class = "glyphicon glyphicon-trash"></span></a></td>
                         </tr>

@@ -1,4 +1,4 @@
-<?php $secciones = $estudiantes->listar_secciones(); ?>
+<?php $programas = $estudiantes->listar_programas(); ?>
 <div class="box-principal">
 <h3 class="titulo">Editar estudiantes<hr></h3>
 	<div class="panel panel-success">
@@ -37,13 +37,13 @@
 				        <input class="form-control" value="<?php echo $datos['promedio']; ?>" name="promedio" type="number" required>
 				    </div>
 				    <div class="form-group">
-				      <label  class="control-label">Sección (<b>Sección Actual: <?php echo $datos['nombre_seccion']; ?></b>)</label>
-				      <select id = "id_seccion" name="id_seccion" class="form-control">
-								<option value="0">Seleccione una seccion</option>
+				      <label  class="control-label">Programa (<b>Programa Actual: <?php echo $datos['nombre_programa']; ?></b>)</label>
+				      <select id = "id_programa" name="id_programa" class="form-control">
+								<option value="0">Seleccione un programa</option>
 														<?php
 														//print_r($datos);
-															while($row = pg_fetch_array($secciones)){
-																if($datos['nombre_seccion'] != $row['nombre']){
+															while($row = pg_fetch_array($programas)){
+																if($datos['nombre_programa'] != $row['nombre']){
 																	?>
 																			<option value="<?php echo $row['id']?>"><?php echo $row['nombre']?></option>
 																	<?php

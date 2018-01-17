@@ -1,16 +1,16 @@
 <?php namespace Controllers;
 
     use Models\Estudiante as Estudiante;
-    use Models\Seccion as Seccion;
+    use Models\Programa as Programa;
 
     class estudiantesController{
         
         private $estudiante;
-        private $seccion;
+        private $programa;
 
         public function __construct(){
             $this->estudiante = new Estudiante();
-            $this->seccion = new Seccion();
+            $this->programa = new Programa();
         }
 
         public function index(){
@@ -21,7 +21,7 @@
         public function agregar(){
 
             if(!$_POST){
-                $datos = $this->seccion->listar();
+                $datos = $this->programa->listar();
                 return $datos;
             }else{
                 $permitidos = array("image/jpg","image/jpeg","image/png","image/gif");
@@ -38,7 +38,7 @@
                 $this->estudiante->set("nombre", $_POST['nombre']);
                 $this->estudiante->set("edad", $_POST['edad']);
                 $this->estudiante->set("promedio", $_POST['promedio']);
-                $this->estudiante->set("id_seccion", $_POST['id_seccion']);
+                $this->estudiante->set("id_programa", $_POST['id_programa']);
                 $this->estudiante->set("imagen", $nombre_imagen);
                 $this->estudiante->add();
                 
@@ -66,7 +66,7 @@
                 $this->estudiante->set("nombre", $_POST['nombre']);
                 $this->estudiante->set("edad", $_POST['edad']);
                 $this->estudiante->set("promedio", $_POST['promedio']);
-                $this->estudiante->set("id_seccion", $_POST['id_seccion']);
+                $this->estudiante->set("id_programa", $_POST['id_programa']);
                 $this->estudiante->set("imagen", $nombre_imagen);   
                 
                 $this->estudiante->edit();
@@ -75,8 +75,8 @@
             }
         }
 
-        public function listar_secciones(){
-            $datos = $this->seccion->listar();
+        public function listar_programas(){
+            $datos = $this->programa->listar();
             return $datos;
         }
 

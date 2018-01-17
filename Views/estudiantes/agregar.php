@@ -8,8 +8,8 @@
 	  	<div class="row">
 	  		<div class="col-md-1"></div>
 	  		<div class="col-md-10">
-	  			<form class="form-horizontal" action="" method="POST" enctype="multipart/form-data" onsubmit = "if(id_seccion.selectedIndex==0){
-                                                                                                                    alert('Seleccione una seccion');
+	  			<form class="form-horizontal" action="" method="POST" enctype="multipart/form-data" onsubmit = "if(id_programa.selectedIndex==0){
+                                                                                                                    alert('Seleccione un programa');
                                                                                                                     return false;
                                                                                                                 }else{
                                                                                                                     alert('estudiante registrado');   
@@ -28,8 +28,8 @@
 				    </div>
 				    <div class="form-group">
 				      <label  class="control-label">Sección</label>
-				      <select name="id_seccion" class="form-control">
-                          <option value="0">Seleccione una seccion</option>
+				      <select name="id_programa" class="form-control">
+                          <option value="0">Seleccione un programa</option>
                           <?php
                           //print_r($datos);
                             while($row = pg_fetch_array($datos)){

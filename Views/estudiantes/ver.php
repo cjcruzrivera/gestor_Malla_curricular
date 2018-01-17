@@ -34,8 +34,8 @@
 				        <input readonly class="form-control" value="<?php echo $datos['promedio']; ?>" name="promedio" type="number" required>
 				    </div>
 				    <div class="form-group">
-				      <label  class="control-label">Sección</label>
-                        <input readonly class="form-control" value="<?php echo $datos['nombre_seccion']; ?>" name="nombre_seccion" type="text" required>				      
+				      <label  class="control-label">Programa</label>
+                        <input readonly class="form-control" value="<?php echo $datos['nombre_programa']; ?>" name="nombre_programa" type="text" required>				      
 				    </div>
 				
 	  		</div>

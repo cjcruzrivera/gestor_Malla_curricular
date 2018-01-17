@@ -36,8 +36,8 @@
 		        <li class="dropdown">
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Programas <span class="caret"></span></a>
 		          <ul class="dropdown-menu" role="menu">
-		            <li><a href="<?php echo URL; ?>secciones">Listado</a></li>
-		            <li><a href="<?php echo URL; ?>secciones/agregar">Agregar</a></li>
+		            <li><a href="<?php echo URL; ?>programas">Listado</a></li>
+		            <li><a href="<?php echo URL; ?>programas/agregar">Agregar</a></li>
 		          </ul>
 		        </li>
 		      </ul> 
