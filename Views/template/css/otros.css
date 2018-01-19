@@ -22,5 +22,9 @@ footer{
 	width: 50px;
 }
 footer{
-	font-size: 9px;
+	font-size: 10px;
+}
+
+.button_malla{
+	width: 160px;
 }

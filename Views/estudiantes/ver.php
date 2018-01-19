@@ -15,27 +15,28 @@
                     </a>
                   </div>
 				</div>
+	  		<div class="col-md-3"><button class = "button_malla">
+					<a href="#" target = "_blank"> 
+						Consultar Malla Curricular
+					</a></button>
+				</div>				
 	  		</div>
 	  		<div class="col-md-9">
-					<div hidden class="form-group">
-				      <label  class="control-label"></label>
-				        <input readonly class="form-control" name="imagen_old" id="imagen_old" type="text" value = "<?php echo $datos['imagen']; ?>" required>
-				    </div>
 				    <div class="form-group">
 				      <label  class="control-label">Nombre del estudiante</label>
-				        <input readonly class="form-control" value="<?php echo $datos['nombre']; ?>" name="nombre" type="text" required>
+				        <label class = "form-control"><?php echo $datos['nombre']; ?></label>
 				    </div>
 				    <div class="form-group">
 				      <label  class="control-label">Edad</label>
-				        <input readonly class="form-control" value="<?php echo $datos['edad']; ?>" name="edad" type="number" required>
+							<label class = "form-control"><?php echo $datos['edad']; ?></label>							
 				    </div>
 				    <div class="form-group">
 				      <label  class="control-label">Promedio</label>
-				        <input readonly class="form-control" value="<?php echo $datos['promedio']; ?>" name="promedio" type="number" required>
+							<label class = "form-control"><?php echo $datos['promedio']; ?></label>														
 				    </div>
 				    <div class="form-group">
 				      <label  class="control-label">Programa</label>
-                        <input readonly class="form-control" value="<?php echo $datos['nombre_programa']; ?>" name="nombre_programa" type="text" required>				      
+							<label class = "form-control"><?php echo $datos['nombre_programa']; ?></label>							
 				    </div>
 				
 	  		</div>
